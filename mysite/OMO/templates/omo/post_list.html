@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMO</title>
+</head>
+<body>
+<div>
+    <h1><a href="/">OMO Blog </a></h1>
+</div>
+<br>
+
+{% for post in posts %}
+<div>
+    <p>published: {{post.published_date}}</p>
+    <h2><a href="">{{post.title}}</a></h2>
+    <p>{{post.text|linebreaksbr}}</p>
+</div>
+{% endfor %}
+
+<!--    <h2><a href="">MY first post</a></h2>-->
+<!--    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida-->
+<!--        at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo-->
+<!--        sit amet risus.</p>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <p>published: 14.06.2014, 12:14</p>-->
+<!--    <h2><a href="">My second post</a></h2>-->
+<!--    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida-->
+<!--        at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>-->
+<!--</div>-->
+</body>
+</html>
